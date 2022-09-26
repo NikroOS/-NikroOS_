@@ -1,0 +1,168 @@
+/*NikroOS WindowControlPanel*/
+/*Настройка окна и панели кнопок Закрыть-МинМакс-Свернуть*/
+
+/*Настройки окна и прочей ереси*/
+/*Окно: Темная тема*/
+:root.theme-dark {
+  --window-margin: 20px; /*must be above 20px*/
+  --window-colour: #0009;
+  --window-blur: 5px;
+  --window-border-radius: 10px;
+  --sidebar-colour: rgb(36, 36, 36);
+}
+
+/*Окно: Светлая тема*/
+:root.theme-light {
+  --window-margin: 20px; /*must be above 20px*/
+  --window-colour: rgba(255, 255, 255, 0.6);
+  --window-blur: 5px;
+  --window-border-radius: 10px;
+  --sidebar-colour: rgb(209, 209, 209);
+}
+
+/*Кнопка Закрыть. Темная тема*/
+.theme-dark .winButtonClose-3Q8ZH5 {
+  top: -3.5px;
+  right: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0px 5px 5px 0px;
+  color: #fff;
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur));
+  transition: .2s;
+}
+.theme-dark .winButtonClose-3Q8ZH5:hover {
+  top: -3.5px;
+  right: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0px 5px 5px 0px;
+  color: rgb(255, 77, 77);
+  background: transparent;
+  transform: rotate(90deg)!important;
+  transition: 0.1s;
+  backdrop-filter: none;
+}
+/*Кнопка МинМакс. Темная тема*/
+.theme-dark .winButtonMinMax-3RsPUg:nth-child(3) {
+  top: -3.5px;
+  right: 10px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0px;
+  color: #fff;
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur));
+  transition: .2s;
+}
+.theme-dark .winButtonMinMax-3RsPUg:nth-child(3):hover {
+  top: -3.5px;
+  right: 10px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0px;
+  color: rgb(131, 165, 231);
+  background: transparent;
+  transform: rotate(90deg)!important;
+  transition: .1s;
+  backdrop-filter: none;
+}
+/*Кнопка Свернуть. Темная тема*/
+.theme-dark .winButtonMinMax-3RsPUg:nth-child(2n) {
+  top: -3.5px;
+  right: 0px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px 0px 0px 5px;
+  color: #fff;
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur));
+  transition: .2s;
+}
+.theme-dark .winButtonMinMax-3RsPUg:nth-child(2n):hover {
+  top: -3.5px;
+  right: 0px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px 0px 0px 5px;
+  color: #fff;
+  background: transparent;
+  transform: rotate(180deg)!important;
+  transition: .1s;
+  backdrop-filter: none;
+}
+
+/*Кнопка Закрыть. Светлая тема*/
+.theme-light .winButtonClose-3Q8ZH5 {
+  top: -3.5px;
+  right: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0px 5px 5px 0px;
+  color: #fff;
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur));
+  transition: .2s;
+}
+.theme-light .winButtonClose-3Q8ZH5:hover {
+  top: -3.5px;
+  right: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0px 5px 5px 0px;
+  color: rgb(255, 77, 77);
+  background: transparent;
+  transform: rotate(90deg)!important;
+  transition: 0.1s;
+  backdrop-filter: none;
+}
+/*Кнопка МинМакс. Светлая тема*/
+.theme-light .winButtonMinMax-3RsPUg:nth-child(3) {
+  top: -3.5px;
+  right: 10px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0px;
+  color: #fff;
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur));
+  transition: .2s;
+}
+.theme-light .winButtonMinMax-3RsPUg:nth-child(3):hover {
+  top: -3.5px;
+  right: 10px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 0px;
+  color: rgb(131, 165, 231);
+  background: transparent;
+  transform: rotate(90deg)!important;
+  transition: .1s;
+  backdrop-filter: none;
+}
+
+/*Кнопка Свернуть. Светлая тема*/
+.theme-light .winButtonMinMax-3RsPUg:nth-child(2n) {
+  top: -3.5px;
+  right: 0px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px 0px 0px 5px;
+  color: #fff;
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur));
+  transition: .2s;
+}
+.theme-light .winButtonMinMax-3RsPUg:nth-child(2n):hover {
+  top: -3.5px;
+  right: 0px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px 0px 0px 5px;
+  color: #fff;
+  background: transparent;
+  transform: rotate(180deg)!important;
+  transition: .1s;
+  backdrop-filter: none;
+}
